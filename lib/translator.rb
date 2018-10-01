@@ -14,12 +14,13 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   new_hash = load_library(file)
+  message = ""
   new_hash["get_emoticon"].each do |english, japanese|
     if emoticon == english
-      new_hash["get_emoticon"][emoticon]
+      message = japanese
     end
   end
-  new_hash
+  message
 end
 
 def get_english_meaning
