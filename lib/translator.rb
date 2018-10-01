@@ -19,6 +19,7 @@ def get_japanese_emoticon(file, emoticon)
       new_hash["get_emoticon"][emoticon]
     end
   end
+  new_hash
 end
 
 def get_english_meaning
